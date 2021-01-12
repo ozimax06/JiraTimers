@@ -37,6 +37,7 @@ namespace JiraTimers.IssueTrackingSystem.Impl.Qml
 		public bool ReadyToCreate()
 		{
 			return !string.IsNullOrEmpty(_settings.JiraBaseUrl) && !string.IsNullOrEmpty(_settings.JiraUserName) && !string.IsNullOrEmpty(_settings.JiraUserPassword);
+
 		}
 
 		public async Task<string?> TryCreateItsClientAsync()

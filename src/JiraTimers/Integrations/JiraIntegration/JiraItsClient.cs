@@ -26,6 +26,7 @@ namespace JiraTimers.Integrations.JiraIntegration
 			try
 			{
 				await _client.ServerInfo.GetServerInfoAsync();
+
 			}
 			catch (Exception e) when (e.Message.Contains("Unauthorized (401)"))
 			{
